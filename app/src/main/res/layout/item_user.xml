@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/primary">
+
+            <TextView
+                android:id="@+id/type_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="PARTICIPANTE"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/picture_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/ic_profile"
+                app:srcCompat="@drawable/ic_profile"
+                app:civ_border_color="@color/divider"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/fullname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/picture_image"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Benites Cuenca, Erick Saúl"/>
+
+            <TextView
+                android:id="@+id/group_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/picture_image"
+                android:layout_below="@+id/fullname_text"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Redes y Comuncaciones de Datos"/>
+
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/picture_image"
+                android:layout_below="@+id/group_text"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text"
+                tools:text="Vence: 13 de Mayo"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

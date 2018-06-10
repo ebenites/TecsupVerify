@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TecsupVerify</string>
+    <string name="simple_scanner_hint">Ubique el código de barras</string>
+    <string name="dni_required">Ingrese DNI</string>
+    <string name="search_button">Buscar</string>
+    <string name="connection_error">Problemas de conexión</string>
+    <string name="disconnection_error">No está conectado a Internet</string>
+    <string name="search_information">Buscando información…</string>
+    <string name="information_notfound">Información no encontrada</string>
+    <string name="expired_message">VENCIDO</string>
+    <string name="inactive_message">Sin cursos activos</string>
+</resources>
