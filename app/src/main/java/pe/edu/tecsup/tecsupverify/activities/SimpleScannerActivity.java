@@ -58,7 +58,8 @@ public class SimpleScannerActivity extends AppCompatActivity implements ZXingSca
         super.onResume();
         mScannerView.setResultHandler(this);
         List<BarcodeFormat> formats = new ArrayList<>();
-        formats.add(BarcodeFormat.CODE_128);
+        formats.add(BarcodeFormat.CODE_128);    // IDCARD
+        formats.add(BarcodeFormat.CODE_39);     // DNI
         mScannerView.setFormats(formats);
         mScannerView.startCamera();
         mScannerView.setAutoFocus(true);
